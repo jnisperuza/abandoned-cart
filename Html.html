@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  style="
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1 !important;
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abandoned Cart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0">
+    <table style="background-color: #b6b6b6; width: 100%">
+      <tbody>
+        <tr>
+          <td>
+            <table
+              style="
+                background-color: #f9f9f9;
+                width: 600px;
+                margin: 0 auto 0 auto;
+              "
+            >
+              <tbody>
+                <!--Header-->
+                <tr>
+                  <td
+                    style="
+                      background-color: #ffffff;
+                      text-align: center;
+                      height: 115px;
+                    "
+                  >
+                    <a href="/">
+                      <img
+                        src="https://copservirtest.vteximg.com.br/arquivos/email-lopido.png"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <!--Content-->
+                <tr>
+                  <td>
+                    <table style="width: 100%">
+                      <tbody>
+                        <tr style="display: block; margin-top: 24px">
+                          <td
+                            style="
+                              display: block;
+                              color: #333333;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 34px;
+                              font-weight: 500;
+                              letter-spacing: 0.25px;
+                              line-height: 40px;
+                              text-align: center;
+                              padding: 0 100px 0 100px;
+                            "
+                          >
+                            Hola {{additionalFields.firstName}},
+                          </td>
+                        </tr>
+                        <tr style="display: block; margin-top: 21px">
+                          <td
+                            style="
+                              display: block;
+                              color: #ef4b23;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 18px;
+                              font-weight: 700;
+                              letter-spacing: 0.25px;
+                              line-height: 24px;
+                              text-align: center;
+                              padding: 0 100px 0 100px;
+                            "
+                          >
+                            Lorem ipsum dolor sit amet
+                          </td>
+                        </tr>
+                        <tr style="display: block; margin-top: 4px">
+                          <td
+                            style="
+                              display: block;
+                              color: #333333;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 16px;
+                              font-weight: 400;
+                              line-height: 22px;
+                              text-align: center;
+                              padding: 0 120px 0 120px;
+                            "
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Phasellus quis hendrerit metus, nec lacinia
+                            dui. Praesent sed leo id neque bibendum auctor.
+                            Etiam sagittis luctus enim mattis vehicula.
+                          </td>
+                        </tr>
+                        <tr style="display: block; margin-top: 32px">
+                          <td
+                            style="
+                              display: block;
+                              width: 257px;
+                              height: 39px;
+                              border-radius: 5px;
+                              background-color: #ef4b23;
+                              margin: 0 auto 0 auto;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              style="
+                                display: block;
+                                text-decoration: none;
+                                color: #ffffff;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 18px;
+                                font-weight: 700;
+                                letter-spacing: 0.25px;
+                                line-height: 24px;
+                                text-align: center;
+                                padding: 6px;
+                              "
+                              href="/{{addToCartURL}}"
+                              target="_blank"
+                            >
+                              Finalizar compra
+                            </a>
+                          </td>
+                        </tr>
+                        <!--Product details-->
+                        <tr
+                          style="
+                            display: block;
+                            margin: 22px 94px 70px 94px;
+                            width: 411px;
+                            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+                            border-radius: 5px;
+                            border: 1px solid #e0e0e0;
+                            background-color: #ffffff;
+                            padding: 30px 60px 30px 60px;
+                          "
+                        >
+                          <td style="width: 100%; display: block">
+                            <table style="width: 100%">
+                              <tbody>
+                                {{#each items}}
+                                <tr
+                                  style="
+                                    display: block;
+                                    width: 100%;
+                                    border-bottom: 1px solid #e0e0e0;
+                                    padding-bottom: 18px;
+                                    margin-bottom: 18px;
+                                    max-height: 400px;
+                                    overflow: auto;
+                                  "
+                                >
+                                  <td style="width: 35%; text-align: center">
+                                    <img style="width: 100%" src="{{image}}" />
+                                  </td>
+                                  <td style="width: 100%; padding-left: 8px">
+                                    <a
+                                      href="/{{link}}"
+                                      target="_blank"
+                                      style="
+                                        width: 100%;
+                                        text-decoration: none;
+                                        color: #333333;
+                                        font-family: 'Lato', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 18px;
+                                        text-align: left;
+                                      "
+                                    >
+                                      <table>
+                                        <tbody>
+                                          <tr>
+                                            <td style="display: block">
+                                              {{productName}}
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              style="
+                                                display: block;
+                                                color: #707070;
+                                                font-family: 'Lato', sans-serif;
+                                                font-size: 10px;
+                                                font-weight: 400;
+                                                line-height: 18px;
+                                                text-align: left;
+                                              "
+                                            >
+                                              Cantidad {{quantity}}
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              style="
+                                                display: block;
+                                                color: #ef4b23;
+                                                font-family: 'Lato', sans-serif;
+                                                font-size: 14px;
+                                                font-weight: 700;
+                                                line-height: 18px;
+                                                text-align: left;
+                                              "
+                                            >
+                                              ${{ replace (formatCurrency
+                                              sellingPrice) ",00" ""}}
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </a>
+                                  </td>
+                                </tr>
+                                {{/each}} {{#each totals}} {{#if value}}
+                                <tr style="display: block; width: 100%">
+                                  <td style="display: block">
+                                    <table style="width: 100%">
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            style="
+                                              color: #333333;
+                                              font-family: 'Lato', sans-serif;
+                                              font-size: 12px;
+                                              font-weight: 700;
+                                              line-height: 18px;
+                                              text-align: left;
+                                            "
+                                          >
+                                            {{#eq id "Items"}} Subtotal: {{/eq}}
+                                            {{#eq id "Shipping"}} Envío: {{/eq}}
+                                            {{#eq id "Discounts"}} Descuentos:
+                                            {{/eq}}
+                                          </td>
+                                          <td
+                                            style="
+                                              color: #333333;
+                                              font-family: 'Lato', sans-serif;
+                                              font-size: 12px;
+                                              font-weight: 700;
+                                              line-height: 18px;
+                                              text-align: right;
+                                            "
+                                          >
+                                            ${{ replace (formatCurrency value)
+                                            ",00" ""}}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                {{/if}} {{/each}} {{#if value}}
+                                <tr style="display: block; width: 100%">
+                                  <td style="display: block">
+                                    <table style="width: 100%">
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            style="
+                                              color: #ef4b23;
+                                              font-family: 'Lato', sans-serif;
+                                              font-size: 18px;
+                                              font-weight: 700;
+                                              line-height: 24px;
+                                              text-align: left;
+                                            "
+                                          >
+                                            Total:
+                                          </td>
+                                          <td
+                                            style="
+                                              color: #ef4b23;
+                                              font-family: 'Lato', sans-serif;
+                                              font-size: 18px;
+                                              font-weight: 700;
+                                              line-height: 24px;
+                                              text-align: right;
+                                            "
+                                          >
+                                            ${{ replace (formatCurrency value)
+                                            ",00" ""}}
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                {{/if}}
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <!--End product details--->
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!--Footer-->
+                <tr>
+                  <td
+                    style="
+                      background-color: #ffffff;
+                      text-align: center;
+                      padding: 18px 70px 30px 70px;
+                    "
+                  >
+                    <table style="width: 100%">
+                      <tbody>
+                        <tr style="display: block; width: 100%">
+                          <td
+                            style="
+                              width: 43%;
+                              padding-right: 10px;
+                              color: #333333;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 14px;
+                              font-weight: 400;
+                              line-height: 24px;
+                              text-align: left;
+                              vertical-align: top;
+                            "
+                          >
+                            <span
+                              style="
+                                display: block;
+                                color: #ef4b23;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 34px;
+                                text-align: left;
+                                margin-bottom: 12px;
+                              "
+                            >
+                              Información de contacto
+                            </span>
+                            En Cali: (032) 485-2289<br />
+                            Resto del pais: 01800939900<br />
+                            Celular: 314 7940742<br />
+                            Correo:
+                            <a
+                              href="mailto:servicio_cliente&#64;copservir.com"
+                              target="_blank"
+                              style="
+                                text-decoration: none;
+                                color: #333333;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 24px;
+                              "
+                            >
+                              servicio_cliente&#64;copservir.com
+                            </a>
+                          </td>
+                          <td
+                            style="
+                              width: 45%;
+                              padding-left: 10px;
+                              color: #333333;
+                              font-family: 'Lato', sans-serif;
+                              font-size: 14px;
+                              font-weight: 400;
+                              line-height: 24px;
+                              text-align: right;
+                              vertical-align: top;
+                            "
+                          >
+                            <span
+                              style="
+                                display: block;
+                                color: #ef4b23;
+                                font-family: 'Lato', sans-serif;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 34px;
+                                text-align: right;
+                                margin-bottom: 12px;
+                              "
+                            >
+                              Síguenos
+                            </span>
+                            <a
+                              href="https://www.facebook.com/"
+                              target="_blank"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                src="https://copservirtest.vteximg.com.br/arquivos/email-facebook.png"
+                                alt="Facebook"
+                              />
+                            </a>
+                            <a
+                              href="https://www.instagram.com/"
+                              target="_blank"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                src="https://copservirtest.vteximg.com.br/arquivos/email-instagram.png"
+                                alt="Instagram"
+                              />
+                            </a>
+                            <a
+                              href="https://www.youtube.com/"
+                              target="_blank"
+                              style="text-decoration: none"
+                            >
+                              <img
+                                src="https://copservirtest.vteximg.com.br/arquivos/email-youtube.png"
+                                alt="YouTube"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      display: block;
+                      color: #333333;
+                      font-family: 'Lato', sans-serif;
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 24px;
+                      text-align: center;
+                      padding: 15px 0 15px 0;
+                    "
+                  >
+                    Todos los derechos reservados. Copyright © Copservir 2021
+                  </td>
+                </tr>
+                <!--End Footer-->
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
