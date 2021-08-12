@@ -1,5 +1,5 @@
 {
-    "email": "jeison.nisperuza@itglobers.com",
+    "email": "myemail@email.com",
     "items": [
         {
             "id": "2",
@@ -14,29 +14,5 @@
     "addToCartURL": "/checkout/cart/add?sku=1&qty=1&seller=1&sku=2&qty=1&seller=1",
     "additionalFields": {
         "firstName": "Jeison Nisperuza"
-    },
-    "_accountInfo": {
-        "MainAccountName": "copservirtest",
-        "AccountName": "lopidotest",
-        "Cnpj": "10",
-        "Id": "103bbf65-40fc-4ffc-840d-6abb00d5aaf8",
-        "IsActive": true,
-        "IsOperating": false,
-        "CreationDate": "2020-05-13T16:28:57",
-        "OperationDate": null,
-        "CompanyName": "La Rebaja",
-        "TradingName": "Lo Pido",
-        "City": null,
-        "Complement": null,
-        "Country": null,
-        "State": null,
-        "Address": null,
-        "District": null,
-        "Number": null,
-        "PostalCode": null,
-        "Licences": null,
-        "ParentAccountName": null,
-        "InactivationDate": null,
-        "Platform": "vtex"
     }
 }
