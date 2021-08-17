@@ -1,17 +1,26 @@
 {
-    "email": "myemail@email.com",
+    "email": "jeison.nisperuza@itglobers.com",
     "items": [
         {
             "id": "2",
             "productName": "ISOFEM GEL SKU10012",
-            "image": "https://copservirtest.vteximg.com.br/arquivos/ids/633981/isofem_gel-10012-1520509549.png?v=637642976832730000",
+            "image": "https://copservirtest.vteximg.com.br/arquivos/ids/660802/isofem_gel-10012-1520509549.png?v=637643842242400000",
             "sellingPrice": 29500,
             "quantity": "1",
             "link": "isofem-gel-10012",
             "availabilityQuantity": 200
+        },
+        {
+            "id": "5",
+            "productName": "APROVASC 300/5 MG SKU10027",
+            "image": "https://copservirtest.vteximg.com.br/arquivos/ids/660811/aprovasc_300_5_mg-10027.png?v=637643842260070000",
+            "sellingPrice": 269900,
+            "quantity": "1",
+            "link": "aprovasc-300-5-mg-10027",
+            "availabilityQuantity": 200
         }
     ],
-    "addToCartURL": "/checkout/cart/add?sku=1&qty=1&seller=1&sku=2&qty=1&seller=1",
+    "addToCartURL": "add?sku=2&qty=1&seller=1&sku=5&qty=1&seller=1",
     "additionalFields": {
         "firstName": "Jeison Nisperuza"
     }

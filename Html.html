@@ -107,25 +107,6 @@
                             Olvidaste algo en tu carrito
                           </td>
                         </tr>
-                        <!-- <tr style="display: block; margin-top: 4px">
-                          <td
-                            style="
-                              display: block;
-                              color: #333333;
-                              font-family: 'Lato', sans-serif;
-                              font-size: 16px;
-                              font-weight: 400;
-                              line-height: 22px;
-                              text-align: center;
-                              padding: 0 120px 0 120px;
-                            "
-                          >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Phasellus quis hendrerit metus, nec lacinia
-                            dui. Praesent sed leo id neque bibendum auctor.
-                            Etiam sagittis luctus enim mattis vehicula.
-                          </td>
-                        </tr> -->
                         <tr style="display: block; margin-top: 32px">
                           <td
                             style="
@@ -151,7 +132,7 @@
                                 text-align: center;
                                 padding: 6px;
                               "
-                              href="/{{addToCartURL}}"
+                              href="https://vtextest--lopidotest.myvtex.com/checkout/cart/{{addToCartURL}}"
                               target="_blank"
                             >
                               Finalizar compra
@@ -190,139 +171,43 @@
                                     <img style="width: 100%" src="{{image}}" />
                                   </td>
                                   <td style="width: 100%; padding-left: 8px">
-                                    <a
-                                      href="/{{link}}"
-                                      target="_blank"
-                                      style="
-                                        width: 100%;
-                                        text-decoration: none;
-                                        color: #333333;
-                                        font-family: 'Lato', sans-serif;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        line-height: 18px;
-                                        text-align: left;
-                                      "
-                                    >
-                                      <table>
-                                        <tbody>
-                                          <tr>
-                                            <td style="display: block">
-                                              {{productName}}
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                display: block;
-                                                color: #707070;
-                                                font-family: 'Lato', sans-serif;
-                                                font-size: 10px;
-                                                font-weight: 400;
-                                                line-height: 18px;
-                                                text-align: left;
-                                              "
-                                            >
-                                              Cantidad {{quantity}}
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td
-                                              style="
-                                                display: block;
-                                                color: #ef4b23;
-                                                font-family: 'Lato', sans-serif;
-                                                font-size: 14px;
-                                                font-weight: 700;
-                                                line-height: 18px;
-                                                text-align: left;
-                                              "
-                                            >
-                                              ${{ replace (formatCurrency
-                                              sellingPrice) ",00" ""}}
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </a>
-                                  </td>
-                                </tr>
-                                {{/each}} {{#each totals}} {{#if value}}
-                                <tr style="display: block; width: 100%">
-                                  <td style="display: block">
-                                    <table style="width: 100%">
+                                    <table>
                                       <tbody>
                                         <tr>
                                           <td
                                             style="
+                                              display: block;
                                               color: #333333;
                                               font-family: 'Lato', sans-serif;
-                                              font-size: 12px;
-                                              font-weight: 700;
+                                              font-size: 14px;
+                                              font-weight: 400;
                                               line-height: 18px;
                                               text-align: left;
                                             "
                                           >
-                                            {{#eq id "Items"}} Subtotal: {{/eq}}
-                                            {{#eq id "Shipping"}} Envío: {{/eq}}
-                                            {{#eq id "Discounts"}} Descuentos:
-                                            {{/eq}}
+                                            {{productName}}
                                           </td>
+                                        </tr>
+                                        <tr>
                                           <td
                                             style="
-                                              color: #333333;
+                                              display: block;
+                                              color: #707070;
                                               font-family: 'Lato', sans-serif;
-                                              font-size: 12px;
-                                              font-weight: 700;
+                                              font-size: 10px;
+                                              font-weight: 400;
                                               line-height: 18px;
-                                              text-align: right;
+                                              text-align: left;
                                             "
                                           >
-                                            ${{ replace (formatCurrency value)
-                                            ",00" ""}}
+                                            Cantidad {{quantity}}
                                           </td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </td>
                                 </tr>
-                                {{/if}} {{/each}} {{#if value}}
-                                <tr style="display: block; width: 100%">
-                                  <td style="display: block">
-                                    <table style="width: 100%">
-                                      <tbody>
-                                        <tr>
-                                          <td
-                                            style="
-                                              color: #ef4b23;
-                                              font-family: 'Lato', sans-serif;
-                                              font-size: 18px;
-                                              font-weight: 700;
-                                              line-height: 24px;
-                                              text-align: left;
-                                            "
-                                          >
-                                            Total:
-                                          </td>
-                                          <td
-                                            style="
-                                              color: #ef4b23;
-                                              font-family: 'Lato', sans-serif;
-                                              font-size: 18px;
-                                              font-weight: 700;
-                                              line-height: 24px;
-                                              text-align: right;
-                                            "
-                                          >
-                                            ${{ replace (formatCurrency value)
-                                            ",00" ""}}
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                                {{/if}}
+                                {{/each}}
                               </tbody>
                             </table>
                           </td>
